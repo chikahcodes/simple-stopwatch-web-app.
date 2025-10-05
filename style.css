@@ -1,0 +1,86 @@
+/* Default browser spacing */
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the stopwatch on the screen ! */
+body {
+   height: 100vh;
+   display:flex;
+   justify-content: center;
+   background:linear-gradient(135eg,#1e1e2f,#2a2a40) ;
+   color: aqua;
+   font-family: 'Courier New', Courier, monospace;
+
+}
+
+/* Stopwatch main box */
+
+.stopwatch-container  {
+  background:   #333;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 5);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+
+}
+/* Digital clock display area */
+.display {
+font-size: 2.5rem;
+background:#000;
+color: forestgreen;
+padding: 20px;
+border-radius: 10px;
+margin: 20px 0;
+letter-spacing: 2px;
+
+}
+
+/* Buttons layout with flexbox  */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+}
+/* Styling for buttons */
+button  {
+
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3 ease;
+
+}
+/* colors for individual buttons */
+#start { background :#28a745;  color: white;}  
+#stop  {background: #ffc107; color :#2a2a40}
+#reset {background: #dc3545;  color:white}
+
+/* Buttons hover effect */
+button:hover{
+transform: scale(1.1);
+opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    .display {
+        font-size: 1.8rem;
+        padding: 15px;
+}
+
+button{
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+  
+        
+        
+    
+}
+ 
